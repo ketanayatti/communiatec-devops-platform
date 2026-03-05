@@ -128,11 +128,14 @@ const VideoCall = ({
         !navigator.mediaDevices ||
         typeof navigator.mediaDevices.getUserMedia !== "function"
       ) {
-        const isSecure = typeof window !== "undefined" && window.isSecureContext;
+        const isSecure =
+          typeof window !== "undefined" && window.isSecureContext;
         const reason = isSecure
           ? "Media devices are unavailable in this browser/session."
           : "getUserMedia requires HTTPS or localhost.";
-        toast.error(`${reason} Please open the app over HTTPS and allow camera/mic.`);
+        toast.error(
+          `${reason} Please open the app over HTTPS and allow camera/mic.`,
+        );
         throw new Error("mediaDevices.getUserMedia unavailable");
       }
 
@@ -160,10 +163,7 @@ const VideoCall = ({
       console.error("❌ Failed to get user media:", error);
 
       // Try audio-only if video fails
-      if (
-        error.name === "NotAllowedError" ||
-        error.name === "NotFoundError"
-      ) {
+      if (error.name === "NotAllowedError" || error.name === "NotFoundError") {
         try {
           const audioStream = await navigator.mediaDevices.getUserMedia({
             video: false,
@@ -531,9 +531,7 @@ const VideoCall = ({
 
       try {
         if (pc.signalingState === "have-local-offer") {
-          await pc.setRemoteDescription(
-            new RTCSessionDescription(data.answer),
-          );
+          await pc.setRemoteDescription(new RTCSessionDescription(data.answer));
           remoteDescSetRef.current = true;
           await flushPendingCandidates();
         } else {
