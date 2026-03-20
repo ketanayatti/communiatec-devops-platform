@@ -41,7 +41,7 @@ This project showcases:
 • Containerized application deployment using Docker  
 • Cloud infrastructure deployment on AWS  
 • Automated production deployments  
-• Reverse proxy configuration using Nginx  
+• Reverse proxy configuration using Nginx
 
 The repository serves as a **DevOps portfolio project demonstrating production deployment workflows.**
 
@@ -54,7 +54,7 @@ The system follows a **cloud-based DevOps deployment architecture** consisting o
 • Continuous Integration infrastructure  
 • Containerized application services  
 • Automated CI/CD pipelines  
-• Cloud production environment  
+• Cloud production environment
 
 ---
 
@@ -87,7 +87,7 @@ Pipeline stages include:
 • Automated testing  
 • Docker image creation  
 • Image version tagging  
-• Deployment to production  
+• Deployment to production
 
 👉 **[Click here to view Jenkins CI/CD Pipeline](docs/jenkins-cicd-pipeline.png)**
 
@@ -97,10 +97,10 @@ Pipeline stages include:
 
 The project follows a **branch-based CI/CD workflow** to separate development and production pipelines.
 
-| Branch | Pipeline Behavior |
-|------|------|
-| develop | Build + Test |
-| main | Build + Test + Deploy |
+| Branch  | Pipeline Behavior     |
+| ------- | --------------------- |
+| develop | Build + Test          |
+| main    | Build + Test + Deploy |
 
 👉 **[Click here to view Branch Workflow Diagram](docs/branch-based-cicd-workflow.png)**
 
@@ -110,11 +110,11 @@ The project follows a **branch-based CI/CD workflow** to separate development an
 
 When code is merged into the **main branch**, Jenkins performs the following steps:
 
-1. Checkout repository  
-2. Build application  
-3. Run automated tests  
-4. Build Docker image  
-5. Deploy to production server via SSH  
+1. Checkout repository
+2. Build application
+3. Run automated tests
+4. Build Docker image
+5. Deploy to production server via SSH
 
 Production server then performs:
 
@@ -122,7 +122,7 @@ Production server then performs:
 • Stop previous container  
 • Remove old container  
 • Run new container  
-• Perform application health check  
+• Perform application health check
 
 This ensures **consistent and reliable deployments.**
 
@@ -138,7 +138,7 @@ The project uses the following infrastructure components:
 • Internet Gateway  
 • Security Groups  
 • Docker Runtime Environment  
-• Nginx Reverse Proxy  
+• Nginx Reverse Proxy
 
 ---
 
@@ -147,29 +147,29 @@ The project uses the following infrastructure components:
 Communiatec  
 │  
 ├── Client  
-│   ├── src  
-│   ├── public  
-│   ├── Dockerfile  
-│   ├── nginx.conf  
+│ ├── src  
+│ ├── public  
+│ ├── Dockerfile  
+│ ├── nginx.conf
 
 ├── Server  
-│   ├── controllers  
-│   ├── routes  
-│   ├── models  
-│   ├── services  
-│   ├── middlewares  
-│   ├── socket-handlers  
-│   ├── Dockerfile  
+│ ├── controllers  
+│ ├── routes  
+│ ├── models  
+│ ├── services  
+│ ├── middlewares  
+│ ├── socket-handlers  
+│ ├── Dockerfile
 
 ├── docs  
-│   ├── aws-infrastructure-architecture.png  
-│   ├── branch-based-cicd-workflow.png  
-│   ├── docker-container-architecture.png  
-│   └── jenkins-cicd-pipeline.png  
+│ ├── aws-infrastructure-architecture.png  
+│ ├── branch-based-cicd-workflow.png  
+│ ├── docker-container-architecture.png  
+│ └── jenkins-cicd-pipeline.png
 
 ├── Jenkinsfile  
 ├── docker-compose.yml  
-└── generate-keys.js  
+└── generate-keys.js
 
 ---
 
@@ -202,7 +202,7 @@ This project demonstrates hands-on experience with:
 • AWS infrastructure setup  
 • Reverse proxy configuration  
 • Automated production deployment  
-• Branch-based development workflows  
+• Branch-based development workflows
 
 ---
 
@@ -214,7 +214,7 @@ Planned DevOps enhancements:
 • Infrastructure as Code using Terraform  
 • Monitoring using Prometheus & Grafana  
 • Blue-Green deployments  
-• Centralized logging infrastructure  
+• Centralized logging infrastructure
 
 ---
 

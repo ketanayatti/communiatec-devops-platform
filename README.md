@@ -54,13 +54,13 @@ It delivers:
 
 # Core Modules
 
-| Module | Responsibility |
-|------|------|
-| Client | React UI, routing, socket integration, app state |
-| Server | REST APIs, Socket.io handlers, business logic |
+| Module        | Responsibility                                         |
+| ------------- | ------------------------------------------------------ |
+| Client        | React UI, routing, socket integration, app state       |
+| Server        | REST APIs, Socket.io handlers, business logic          |
 | Server/models | Data schemas for users, chat, groups, vault, admin, AI |
-| scripts | Health check, recovery, setup, and update automation |
-| docs | Architecture and workflow diagrams |
+| scripts       | Health check, recovery, setup, and update automation   |
+| docs          | Architecture and workflow diagrams                     |
 
 ---
 
