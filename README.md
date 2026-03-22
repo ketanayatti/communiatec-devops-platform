@@ -1,4 +1,4 @@
-# Communiatec
+# Communiatec - Platform
 
 **A full-stack real-time collaboration platform — designed, developed, and deployed end-to-end.**
 
